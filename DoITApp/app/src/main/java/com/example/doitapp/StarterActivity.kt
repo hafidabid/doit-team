@@ -20,6 +20,7 @@ class StarterActivity : AppCompatActivity() {
         Timer("loadingUp Application", false).schedule(200){
             val intent = Intent(applicationContext, WelcomePageActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
 

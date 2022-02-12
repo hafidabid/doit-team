@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.doitapp.R
+import com.example.doitapp.databinding.FragmentWelcomeScreenBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,7 +22,8 @@ class WelcomeScreenFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-
+    private lateinit var view : FragmentWelcomeScreenBinding
+    private lateinit var welcomeFragmentController : WelcomeFragmentInterface
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -35,7 +37,20 @@ class WelcomeScreenFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_welcome_screen, container, false)
+        view =  FragmentWelcomeScreenBinding.inflate(inflater, container, false)
+        welcomeFragmentController = activity as WelcomeFragmentInterface
+
+        view.welcomeApplyLoginButton.setOnClickListener{
+            val username : String= view.welcomeEmailAddr.text.toString()
+            val password : String= view.welcomePassword.text.toString()
+            welcomeFragmentController.checkLogin(username, password)
+        }
+
+        view.gotoRegisterPage.setOnClickListener{
+            welcomeFragmentController.registerPage()
+        }
+
+        return view.root
     }
 
     companion object {
