@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottomBtnBeranda"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:title="Beranda"/>
+    <item
+        android:id="@+id/bottomBtnCatat"
+        android:enabled="true"
+        android:icon="@drawable/catat"
+        android:title="Catat"/>
+    <item
+        android:id="@+id/bottomBtnPeringkat"
+        android:enabled="true"
+        android:icon="@drawable/peringkat"
+        android:title="Peringkat"/>
+    <item
+        android:id="@+id/bottomBtnProfil"
+        android:enabled="true"
+        android:icon="@drawable/profil"
+        android:title="Profil"/>
+</menu>

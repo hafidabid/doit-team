@@ -5,5 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".home.HomeActivity">
+    <FrameLayout
+        android:id="@+id/homeFrame"
+        android:layout_width="match_parent"
+        android:layout_height="688dp"
+        app:layout_constraintBottom_toTopOf="@+id/btmNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+    </FrameLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btmNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/text_lines"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/home_bottom_menu"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/button_rounded_pink.xml" value="0.28" />
+        <entry key="app/src/main/res/drawable/button_rounded_white.xml" value="0.324" />
+        <entry key="app/src/main/res/drawable/text_lines.xml" value="0.3425" />
         <entry key="app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.17704149933065597" />
         <entry key="app/src/main/res/layout-w936dp/content_scrolling.xml" value="0.206640625" />
         <entry key="app/src/main/res/layout/activity_family_select.xml" value="0.22" />
@@ -17,8 +19,12 @@
         <entry key="app/src/main/res/layout/card_membership_card.xml" value="0.2261650277896537" />
         <entry key="app/src/main/res/layout/card_modul_belajar.xml" value="0.2261650277896537" />
         <entry key="app/src/main/res/layout/content_scrolling.xml" value="0.2261650277896537" />
+        <entry key="app/src/main/res/layout/fragment_beranda.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.3401268115942029" />
+        <entry key="app/src/main/res/layout/fragment_profil.xml" value="0.2830269345874305" />
         <entry key="app/src/main/res/layout/fragment_welcome_screen.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/home_bottom_menu.xml" value="0.2830269345874305" />
+        <entry key="app/src/main/res/menu/menu_home_page.xml" value="0.2830269345874305" />
       </map>
     </option>
   </component>

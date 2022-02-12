@@ -14,7 +14,7 @@ class StarterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        actionBarRemove()
 
 
         Timer("loadingUp Application", false).schedule(200){
@@ -24,5 +24,10 @@ class StarterActivity : AppCompatActivity() {
         }
 
 
+    }
+
+    fun actionBarRemove(){
+        val getActionBar = supportActionBar
+        getActionBar?.hide()
     }
 }

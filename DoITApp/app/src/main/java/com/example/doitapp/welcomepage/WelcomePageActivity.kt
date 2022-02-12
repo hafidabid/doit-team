@@ -12,10 +12,11 @@ class WelcomePageActivity : AppCompatActivity(), WelcomeFragmentInterface {
     lateinit var binding: ActivityWelcomePageBinding
     lateinit var welcomeScreenFragment: WelcomeScreenFragment
     private lateinit var registerFragment: RegisterFragment
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome_page)
-
+        actionBarRemove()
         welcomeScreenFragment = WelcomeScreenFragment()
         registerFragment= RegisterFragment()
 
@@ -58,5 +59,10 @@ class WelcomePageActivity : AppCompatActivity(), WelcomeFragmentInterface {
 
     override fun registerUser(username: String, password: String, phone: String) {
         TODO("Not yet implemented")
+    }
+
+    fun actionBarRemove(){
+        val getActionBar = supportActionBar
+        getActionBar?.hide()
     }
 }
