@@ -8,5 +8,9 @@ class ClubActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_club)
+
+        supportFragmentManager.beginTransaction().apply{
+            commit()
+        }
     }
 }

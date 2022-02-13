@@ -3,8 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/button_rounded_green.xml" value="0.276" />
         <entry key="app/src/main/res/layout/activity_club.xml" value="0.1838768115942029" />
+        <entry key="app/src/main/res/layout/card_club_lessons.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/card_club_popular.xml" value="0.2713541666666667" />
+        <entry key="app/src/main/res/layout/card_club_welcome.xml" value="0.2713541666666667" />
+        <entry key="app/src/main/res/layout/card_modul_belajar.xml" value="0.2713541666666667" />
+        <entry key="app/src/main/res/layout/card_quest_items.xml" value="0.2713541666666667" />
         <entry key="app/src/main/res/layout/fragment_beranda.xml" value="0.1838768115942029" />
+        <entry key="app/src/main/res/layout/fragment_club_category.xml" value="0.2713541666666667" />
+        <entry key="app/src/main/res/layout/fragment_club_contetnt.xml" value="0.2713541666666667" />
+        <entry key="app/src/main/res/layout/fragment_club_home.xml" value="0.2713541666666667" />
+        <entry key="app/src/main/res/layout/fragment_club_membership.xml" value="0.2713541666666667" />
+        <entry key="app/src/main/res/layout/fragment_club_statistics.xml" value="0.2713541666666667" />
+        <entry key="app/src/main/res/layout/fragment_peringkat.xml" value="0.19202898550724637" />
         <entry key="app/src/main/res/layout/fragment_welcome_screen.xml" value="0.1" />
       </map>
     </option>
