@@ -1,15 +1,12 @@
-package com.example.doitapp.home
+package com.example.doitapp.club.home
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import com.example.doitapp.R
-import com.example.doitapp.club.ClubActivity
-import com.example.doitapp.databinding.FragmentBerandaBinding
+import com.example.doitapp.databinding.FragmentClubHomeBinding
 import com.example.doitapp.databinding.FragmentWelcomeScreenBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -19,13 +16,14 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [BerandaFragment.newInstance] factory method to
+ * Use the [ClubHomeFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class BerandaFragment : Fragment() {
+class ClubHomeFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    lateinit var vBind : FragmentClubHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,16 +38,12 @@ class BerandaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_beranda, container, false)
+        val view = FragmentWelcomeScreenBinding.inflate(inflater, container, false) //inflater.inflate(R.layout.fragment_club_home, container, false)
+        vBind = FragmentClubHomeBinding.inflate(inflater, container, false)
 
-        val clubBtn = view.findViewById<ImageView>(R.id.imageView7)
 
-        clubBtn?.setOnClickListener {
-            val i = Intent(view.context, ClubActivity::class.java)
-            startActivity(i)
-        }
 
-        return view
+        return view.root
     }
 
     companion object {
@@ -59,12 +53,12 @@ class BerandaFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment BerandaFragment.
+         * @return A new instance of fragment ClubHomeFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            BerandaFragment().apply {
+            ClubHomeFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
