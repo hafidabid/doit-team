@@ -1,10 +1,13 @@
 package com.example.doitapp.club.home
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.Navigation
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.doitapp.R
 import com.example.doitapp.databinding.FragmentClubHomeBinding
 import com.example.doitapp.databinding.FragmentWelcomeScreenBinding
@@ -24,7 +27,7 @@ class ClubHomeFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
     lateinit var vBind : FragmentClubHomeBinding
-
+    lateinit var v : View
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -38,12 +41,43 @@ class ClubHomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = FragmentWelcomeScreenBinding.inflate(inflater, container, false) //inflater.inflate(R.layout.fragment_club_home, container, false)
-        vBind = FragmentClubHomeBinding.inflate(inflater, container, false)
+        v = inflater.inflate(R.layout.fragment_club_home, container, false)
 
+        val popularView = v.findViewById<RecyclerView>(R.id.clubHomePopularRecyView)
+        popularView.layoutManager = LinearLayoutManager(v.context)
+        popularView.adapter = PopularAdapter(this.getPopularData())
 
+        val subscribeButton = v.findViewById<Button>(R.id.button3)
+        subscribeButton.setOnClickListener {
+            Navigation.findNavController(v).navigate(R.id.action_clubHomeFragment_to_clubMembershipFragment)
+        }
+        (activity as AppCompatActivity).supportActionBar?.title ="Club"
+        setHasOptionsMenu(true)
 
-        return view.root
+        return v
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater!!.inflate(R.menu.club_topbar, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val id = item!!.itemId
+        if(id==R.id.tombolMenujuStatistik){
+            Navigation.findNavController(v).navigate(R.id.action_clubHomeFragment_to_clubStatisticsFragment)
+        }
+
+        return super.onOptionsItemSelected(item)
+    }
+
+    fun getPopularData() : ArrayList<PopularModel>{
+        val al = ArrayList<PopularModel>()
+        al.add(PopularModel("Ternak Lele","","revi"))
+        al.add(PopularModel("Cara makan kerupuk","","sunahung"))
+        al.add(PopularModel("Cara Buka Google","","hanung"))
+        al.add(PopularModel("Cara mendapat ip4","","ya belajar"))
+        return al
     }
 
     companion object {

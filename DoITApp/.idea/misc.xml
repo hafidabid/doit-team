@@ -3,24 +3,47 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/drawable/button_rounded_green.xml" value="0.276" />
-        <entry key="app/src/main/res/layout/activity_club.xml" value="0.1838768115942029" />
+        <entry key="app/src/main/res/drawable/button_rounded_pink.xml" value="0.28" />
+        <entry key="app/src/main/res/drawable/button_rounded_white.xml" value="0.324" />
+        <entry key="app/src/main/res/drawable/frame_club_white.xml" value="0.2345" />
+        <entry key="app/src/main/res/drawable/text_lines.xml" value="0.3425" />
+        <entry key="app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.17704149933065597" />
+        <entry key="app/src/main/res/layout-w936dp/content_scrolling.xml" value="0.206640625" />
+        <entry key="app/src/main/res/layout/activity_club.xml" value="0.21846943138093203" />
+        <entry key="app/src/main/res/layout/activity_family_select.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.2261650277896537" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3401268115942029" />
+        <entry key="app/src/main/res/layout/activity_welcome_page.xml" value="0.22" />
         <entry key="app/src/main/res/layout/card_club_lessons.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/card_club_popular.xml" value="0.2713541666666667" />
-        <entry key="app/src/main/res/layout/card_club_welcome.xml" value="0.2713541666666667" />
-        <entry key="app/src/main/res/layout/card_modul_belajar.xml" value="0.2713541666666667" />
-        <entry key="app/src/main/res/layout/card_quest_items.xml" value="0.2713541666666667" />
-        <entry key="app/src/main/res/layout/fragment_beranda.xml" value="0.1838768115942029" />
-        <entry key="app/src/main/res/layout/fragment_club_category.xml" value="0.2713541666666667" />
-        <entry key="app/src/main/res/layout/fragment_club_contetnt.xml" value="0.2713541666666667" />
-        <entry key="app/src/main/res/layout/fragment_club_home.xml" value="0.2713541666666667" />
-        <entry key="app/src/main/res/layout/fragment_club_membership.xml" value="0.2713541666666667" />
-        <entry key="app/src/main/res/layout/fragment_club_statistics.xml" value="0.2713541666666667" />
-        <entry key="app/src/main/res/layout/fragment_peringkat.xml" value="0.19202898550724637" />
-        <entry key="app/src/main/res/layout/fragment_welcome_screen.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/card_club_popular.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/card_club_welcome.xml" value="0.2261650277896537" />
+        <entry key="app/src/main/res/layout/card_family_on_welcome.xml" value="0.2261650277896537" />
+        <entry key="app/src/main/res/layout/card_membership_card.xml" value="0.2261650277896537" />
+        <entry key="app/src/main/res/layout/card_modul_belajar.xml" value="0.2261650277896537" />
+        <entry key="app/src/main/res/layout/content_scrolling.xml" value="0.2261650277896537" />
+        <entry key="app/src/main/res/layout/fragment_beranda.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_catatan.xml" value="0.2261650277896537" />
+        <entry key="app/src/main/res/layout/fragment_club_category.xml" value="0.2261650277896537" />
+        <entry key="app/src/main/res/layout/fragment_club_contetnt.xml" value="0.2261650277896537" />
+        <entry key="app/src/main/res/layout/fragment_club_home.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_club_membership.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_club_statistics.xml" value="0.2261650277896537" />
+        <entry key="app/src/main/res/layout/fragment_club_statistics2.xml" value="0.2821718683197948" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.3401268115942029" />
+        <entry key="app/src/main/res/layout/fragment_peringkat.xml" value="0.2261650277896537" />
+        <entry key="app/src/main/res/layout/fragment_profil.xml" value="0.2830269345874305" />
+        <entry key="app/src/main/res/layout/fragment_welcome_screen.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/club_topbar.xml" value="0.2821718683197948" />
+        <entry key="app/src/main/res/menu/home_bottom_menu.xml" value="0.2830269345874305" />
+        <entry key="app/src/main/res/menu/menu_home_page.xml" value="0.2830269345874305" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
 </project>

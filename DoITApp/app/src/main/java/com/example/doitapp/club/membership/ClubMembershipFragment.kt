@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.NavHostFragment
 import com.example.doitapp.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -35,8 +38,14 @@ class ClubMembershipFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_club_membership, container, false)
+        val v = inflater.inflate(R.layout.fragment_club_membership, container, false)
+
+        (activity as AppCompatActivity).supportActionBar?.title ="Membership"
+
+        return v
     }
+
+
 
     companion object {
         /**

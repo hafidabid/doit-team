@@ -11,15 +11,13 @@
         android:theme="@style/Theme.DoITApp">
         <activity
             android:name=".club.ClubActivity"
-            android:exported="false" />
-        <activity
-            android:name=".home.HomeActivity"
-            android:exported="false" />
+            android:exported="true" >
+        </activity>
         <activity
             android:name=".welcomepage.WelcomePageActivity"
             android:exported="false" />
         <activity
-            android:name=".home.HomePageActivity"
+            android:name=".home.HomeActivity"
             android:exported="false"
             android:label="@string/title_activity_home_page"
             android:theme="@style/Theme.DoITApp.NoActionBar" />

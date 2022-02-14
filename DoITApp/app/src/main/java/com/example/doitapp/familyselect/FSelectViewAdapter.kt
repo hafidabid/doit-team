@@ -11,7 +11,7 @@ class FSelectViewAdapter (private val data: ArrayList<FamilyMemberBindingModel>)
     }
 
     override fun onBindViewHolder(holder: HolderFamilyMember, position: Int) {
-        print(data[position].name)
+        //print(data[position].name)
         holder.bind(data[position])
     }
 

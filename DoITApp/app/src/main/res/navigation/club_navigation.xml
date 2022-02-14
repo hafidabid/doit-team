@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/club_navigation"
+    app:startDestination="@id/clubHomeFragment">
+
+    <fragment
+        android:id="@+id/clubHomeFragment"
+        android:name="com.example.doitapp.club.home.ClubHomeFragment"
+        android:label="fragment_club_home"
+        tools:layout="@layout/fragment_club_home" >
+        <action
+            android:id="@+id/action_clubHomeFragment_to_clubMembershipFragment"
+            app:destination="@id/clubMembershipFragment"
+            app:popUpTo="@id/clubHomeFragment" />
+        <action
+            android:id="@+id/action_clubHomeFragment_to_clubCategoryFragment"
+            app:destination="@id/clubCategoryFragment" />
+        <action
+            android:id="@+id/action_clubHomeFragment_to_clubStatisticsFragment"
+            app:destination="@id/clubStatisticsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clubMembershipFragment"
+        android:name="com.example.doitapp.club.membership.ClubMembershipFragment"
+        android:label="fragment_club_membership"
+        tools:layout="@layout/fragment_club_membership" >
+        <action
+            android:id="@+id/action_clubMembershipFragment_to_clubHomeFragment"
+            app:destination="@id/clubHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clubCategoryFragment"
+        android:name="com.example.doitapp.club.category.ClubCategoryFragment"
+        android:label="fragment_club_category"
+        tools:layout="@layout/fragment_club_category" >
+        <action
+            android:id="@+id/action_clubCategoryFragment_to_clubHomeFragment"
+            app:destination="@id/clubHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clubStatisticsFragment"
+        android:name="com.example.doitapp.club.statistics.ClubStatisticsFragment"
+        android:label="fragment_club_statistics"
+        tools:layout="@layout/fragment_club_statistics" >
+        <action
+            android:id="@+id/action_clubStatisticsFragment_to_clubHomeFragment"
+            app:destination="@id/clubHomeFragment" />
+    </fragment>
+</navigation>
