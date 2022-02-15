@@ -7,10 +7,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.doitapp.R
 import com.example.doitapp.club.ClubActivity
 import com.example.doitapp.databinding.FragmentBerandaBinding
 import com.example.doitapp.databinding.FragmentWelcomeScreenBinding
+import com.example.doitapp.datautils.HistoryDataController
+import com.example.doitapp.home.adpters.HistoryAdapter
 import com.example.doitapp.quest.QuestActivity
 
 // TODO: Rename parameter arguments, choose names that match
@@ -55,6 +59,10 @@ class BerandaFragment : Fragment() {
             val i = Intent(view.context, QuestActivity::class.java)
             startActivity(i)
         }
+
+        val history = view.findViewById<RecyclerView>(R.id.historyRecyView)
+        history.layoutManager = LinearLayoutManager(view.context)
+        history.adapter = HistoryAdapter(HistoryDataController.getHistory())
 
         return view
     }

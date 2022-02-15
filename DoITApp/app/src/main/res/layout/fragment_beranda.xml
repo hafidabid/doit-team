@@ -161,6 +161,50 @@
             </LinearLayout>
         </LinearLayout>
 
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView38"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/home_slider_1" />
+
+                <ImageView
+                    android:id="@+id/imageView43"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home_slider_2" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:text="History"
+            android:textColor="#50D0BC"
+            android:textSize="25sp"
+            android:fontFamily="@font/inter_bold"
+            android:layout_marginStart="24dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/historyRecyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="27dp"
+            android:layout_marginVertical="8dp"
+            />
+
 
     </LinearLayout>
 
