@@ -17,7 +17,7 @@ class StarterActivity : AppCompatActivity() {
         actionBarRemove()
 
 
-        Timer("loadingUp Application", false).schedule(200){
+        Timer("loadingUp Application", false).schedule(400){
             val intent = Intent(applicationContext, WelcomePageActivity::class.java)
             startActivity(intent)
             finish()

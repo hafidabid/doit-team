@@ -17,6 +17,8 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3401268115942029" />
         <entry key="app/src/main/res/layout/activity_quest.xml" value="0.2176143651132963" />
         <entry key="app/src/main/res/layout/activity_welcome_page.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/card_catat_history.xml" value="0.22530996152201796" />
+        <entry key="app/src/main/res/layout/card_club_lesson.xml" value="0.22530996152201796" />
         <entry key="app/src/main/res/layout/card_club_lessons.xml" value="0.33" />
         <entry key="app/src/main/res/layout/card_club_popular.xml" value="0.25" />
         <entry key="app/src/main/res/layout/card_club_welcome.xml" value="0.2261650277896537" />
@@ -26,7 +28,7 @@
         <entry key="app/src/main/res/layout/card_quest_items.xml" value="0.67" />
         <entry key="app/src/main/res/layout/content_scrolling.xml" value="0.2261650277896537" />
         <entry key="app/src/main/res/layout/fragment_beranda.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_catatan.xml" value="0.2261650277896537" />
+        <entry key="app/src/main/res/layout/fragment_catatan.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_club_category.xml" value="0.2261650277896537" />
         <entry key="app/src/main/res/layout/fragment_club_contetnt.xml" value="0.2261650277896537" />
         <entry key="app/src/main/res/layout/fragment_club_home.xml" value="0.22" />

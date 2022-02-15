@@ -11,6 +11,7 @@ import com.example.doitapp.R
 import com.example.doitapp.club.ClubActivity
 import com.example.doitapp.databinding.FragmentBerandaBinding
 import com.example.doitapp.databinding.FragmentWelcomeScreenBinding
+import com.example.doitapp.quest.QuestActivity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -46,6 +47,12 @@ class BerandaFragment : Fragment() {
 
         clubBtn?.setOnClickListener {
             val i = Intent(view.context, ClubActivity::class.java)
+            startActivity(i)
+        }
+
+        val questBtn = view.findViewById<ImageView>(R.id.imageView9)
+        questBtn?.setOnClickListener{
+            val i = Intent(view.context, QuestActivity::class.java)
             startActivity(i)
         }
 
