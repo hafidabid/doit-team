@@ -10,9 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DoITApp">
         <activity
-            android:name=".club.ClubActivity"
-            android:exported="true" >
+            android:name=".quest.QuestActivity"
+            android:exported="true"
+            android:label="@string/title_activity_quest"
+            android:theme="@style/Theme.DoITApp.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".club.ClubActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".welcomepage.WelcomePageActivity"
             android:exported="false" />
@@ -27,11 +37,7 @@
         <activity
             android:name=".StarterActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
