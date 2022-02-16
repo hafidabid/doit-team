@@ -105,4 +105,7 @@
     <string name="title_activity_quest">QuestActivity</string>
     <string name="tab_text_1">Quest saat ini</string>
     <string name="tab_text_2">Quest selesai</string>
+    <string name="tab_text_3">Saham</string>
+    <string name="tab_text_4">Reksadana</string>
+    <string name="title_activity_growth">GrowthActivity</string>
 </resources>

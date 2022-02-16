@@ -9,7 +9,7 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.doitapp.R
-import com.example.doitapp.datautils.DreamDataController
+import com.example.doitapp.dream.DreamDataController
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -25,6 +25,7 @@ class MyDreamFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    lateinit var dreamDataController: DreamDataController
     lateinit var v: View
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,11 +42,11 @@ class MyDreamFragment : Fragment() {
         // Inflate the layout for this fragment
         v = inflater.inflate(R.layout.fragment_my_dream, container, false)
         setHasOptionsMenu(true)
-
+        dreamDataController = activity as DreamDataController
         (activity as AppCompatActivity).supportActionBar?.title = Html.fromHtml("<font color=\"black\" >Dream</font>")
 
         val rv : RecyclerView = v.findViewById(R.id.recyclerViewDream)
-        val dreams = DreamDataController.getDream()
+        val dreams = dreamDataController.getDreams()
 
         rv.layoutManager = GridLayoutManager(v.context, 2)
         rv.adapter = DreamAdapter(dreams)

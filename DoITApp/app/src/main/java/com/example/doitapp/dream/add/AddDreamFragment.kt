@@ -12,7 +12,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
 import com.example.doitapp.R
-import com.example.doitapp.datautils.DreamDataController
+import com.example.doitapp.dream.DreamDataController
+import com.example.doitapp.dream.view.DreamData
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,6 +30,7 @@ class AddDreamFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
     lateinit var v: View
+    lateinit var dreamDataController: DreamDataController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -45,7 +47,7 @@ class AddDreamFragment : Fragment() {
         v = inflater.inflate(R.layout.fragment_add_dream, container, false)
 
         (activity as AppCompatActivity).supportActionBar?.title = Html.fromHtml("<font color=\"black\" >Add Dream</font>")
-
+        dreamDataController = activity as DreamDataController
         val btnSimpan = v.findViewById<Button>(R.id.button4)
         val formKeinginan = v.findViewById<EditText>(R.id.editTextTextPersonName)
         val formWaktu = v.findViewById<EditText>(R.id.editTextDate)
@@ -55,8 +57,14 @@ class AddDreamFragment : Fragment() {
             if(
                 (formKeinginan.text.length > 3) and (formNominal.text.length > 3) and (formWaktu.text.length > 8)
             ){
-                DreamDataController.addDream()
+                dreamDataController.addDream(DreamData(
+                    formKeinginan.text.toString(),
+                    formNominal.text.toString().toInt(),
+                    formWaktu.text.toString(),
+                    formCatatan.text.toString() )
+                )
                 Navigation.findNavController(v).navigate(R.id.action_addDreamFragment_to_myDreamFragment)
+                dreamDataController.backHome()
             }else{
                 Toast.makeText(v.context, "Form diatas belum lengkap", Toast.LENGTH_SHORT).show()
             }

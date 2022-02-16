@@ -15,6 +15,7 @@ import com.example.doitapp.databinding.FragmentBerandaBinding
 import com.example.doitapp.databinding.FragmentWelcomeScreenBinding
 import com.example.doitapp.datautils.HistoryDataController
 import com.example.doitapp.dream.DreamActivity
+import com.example.doitapp.growth.GrowthActivity
 import com.example.doitapp.home.adpters.HistoryAdapter
 import com.example.doitapp.quest.QuestActivity
 
@@ -64,6 +65,12 @@ class BerandaFragment : Fragment() {
         val dreamBtn = view.findViewById<ImageView>(R.id.imageView8)
         dreamBtn?.setOnClickListener{
             val i = Intent(view.context, DreamActivity::class.java)
+            startActivity(i)
+        }
+
+        val growthBtn = view.findViewById<ImageView>(R.id.imageView10)
+        growthBtn?.setOnClickListener{
+            val i = Intent(view.context, GrowthActivity::class.java)
             startActivity(i)
         }
 

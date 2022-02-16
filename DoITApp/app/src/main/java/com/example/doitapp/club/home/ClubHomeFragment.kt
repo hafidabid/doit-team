@@ -73,10 +73,10 @@ class ClubHomeFragment : Fragment() {
 
     fun getPopularData() : ArrayList<PopularModel>{
         val al = ArrayList<PopularModel>()
-        al.add(PopularModel("Ternak Lele","","revi"))
-        al.add(PopularModel("Cara makan kerupuk","","sunahung"))
-        al.add(PopularModel("Cara Buka Google","","hanung"))
-        al.add(PopularModel("Cara mendapat ip4","","ya belajar"))
+        al.add(PopularModel("Investasi basic","","revi"))
+        al.add(PopularModel("Cara menabung efektif","","sunahung"))
+        al.add(PopularModel("Reksadana 101","","hanung"))
+        al.add(PopularModel("Cara memulai usaha kecil","","ya belajar"))
         return al
     }
 
