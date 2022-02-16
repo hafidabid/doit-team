@@ -27,7 +27,7 @@ class WelcomePageActivity : AppCompatActivity(), WelcomeFragmentInterface {
     }
 
     override fun checkLogin(username: String, password: String) {
-        val dummyUsn = "test"
+        val dummyUsn = "hanungnahar@gmail.com"
         val dummyPass = "asdf1234"
 
         if(username.equals(dummyUsn) && password.equals(dummyPass)){

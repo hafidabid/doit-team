@@ -10,15 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DoITApp">
         <activity
-            android:name=".quest.QuestActivity"
-            android:exported="true"
-            android:label="@string/title_activity_quest"
-            android:theme="@style/Theme.DoITApp.NoActionBar" >
+            android:name=".dream.DreamActivity"
+            android:exported="true" >
 
         </activity>
         <activity
+            android:name=".quest.QuestActivity"
+            android:exported="true"
+            android:label="@string/title_activity_quest"
+            android:theme="@style/Theme.DoITApp.NoActionBar"></activity>
+        <activity
             android:name=".club.ClubActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".welcomepage.WelcomePageActivity"
             android:exported="false" />
